@@ -1,0 +1,33 @@
+<body>
+<div class="container">
+  <div class="row">
+    
+
+
+
+      <div class="col-lg-4 text-center  " *ngFor="let x of conData; let i=index">
+
+
+        <div (click)="artNav(i,componentCategory)" class="newsCard mt-3">
+          
+            <img class="img-fluid" [src]="x.urlToImage">
+        
+          <div class="newsData">
+            <h2>{{x.title}}</h2>
+            <!--<p>{{x.description}}</p>-->
+          </div>
+       
+      </div>
+
+
+    </div>
+  
+
+
+
+
+
+
+  </div>
+</div>
+</body>
